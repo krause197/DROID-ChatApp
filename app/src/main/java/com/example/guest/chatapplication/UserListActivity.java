@@ -14,7 +14,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class ContactsListActivity extends AppCompatActivity {
+public class UserListActivity extends AppCompatActivity {
     private DatabaseReference mUserReference;
     private FirebaseRecyclerAdapter mFirebaseAdapter;
 

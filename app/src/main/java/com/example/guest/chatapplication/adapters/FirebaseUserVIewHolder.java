@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.example.guest.chatapplication.Constants;
 import com.example.guest.chatapplication.R;
-import com.example.guest.chatapplication.UserDetailActivity;
+import com.example.guest.chatapplication.ConversationActivity;
 import com.example.guest.chatapplication.models.User;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -63,7 +63,7 @@ public class FirebaseUserViewHolder extends RecyclerView.ViewHolder implements V
 
                 int itemPosition = getLayoutPosition();
 
-                Intent intent = new Intent(mContext, UserDetailActivity.class);
+                Intent intent = new Intent(mContext, ConversationActivity.class);
                 intent.putExtra("position", itemPosition + "");
                 intent.putExtra("users", Parcels.wrap(users));
 

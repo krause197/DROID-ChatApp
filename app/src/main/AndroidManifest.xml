@@ -19,7 +19,8 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".CreateAccountActivity" />
-        <activity android:name=".NewMessageActivity"></activity>
+        <activity android:name=".ContactsListActivity" />
+        <activity android:name=".UserDetailActiivity"></activity>
     </application>
 
 </manifest>

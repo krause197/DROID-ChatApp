@@ -6,10 +6,19 @@ package com.example.guest.chatapplication.models;
 public class User {
     private String name;
     private String email;
+    private String phoneNumber;
+    private String userId;
+    private String pushId;
+    private String imageUrl;
 
-    public User(String name, String email) {
+    public User(){};
+
+    public User(String name, String email, String phoneNumber, String userId, String imageUrl) {
         this.name = name;
         this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.userId = userId;
+        this.imageUrl = imageUrl;
     }
 
     public String getName() {
@@ -18,5 +27,21 @@ public class User {
 
     public String getEmail() {
         return email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public String getPushId() {
+        return pushId;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
     }
 }
